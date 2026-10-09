@@ -1,0 +1,43 @@
+{
+  "client": {
+    "client_id": "example",
+    "name": "Example Co",
+    "status": "pilot",
+    "gojiberry_allowed": false,
+    "hubspot_intent_enabled": false,
+    "offer_notes": "The engine finds the right accounts, researches them and drafts the messages; the client's reps send. Never say it reaches out or follows up automatically."
+  },
+  "icp": {
+    "icp_id": "example-default",
+    "name": "B2B startups and growth-stage firms",
+    "industries": "software/SaaS; professional services",
+    "employee_min": 10,
+    "employee_max": 100,
+    "min_sellers": 2,
+    "geo": "US",
+    "buyer_titles": "Founder/CEO; VP Sales; Head of Growth; Head of BD",
+    "exclusions": "Local trades; owners not on LinkedIn",
+    "active": true
+  },
+  "segments": ["saas", "professional_services"],
+  "senders": [
+    {
+      "sender_id": "sender1",
+      "person_name": "Jane Sender",
+      "owner_verified": true,
+      "plan": "salesnav_core",
+      "status": "active",
+      "weekly_cap": 100
+    }
+  ],
+  "examples": [
+    {"example_id": "seed-job", "source": "blueprint_seed", "channel": "linkedin", "touch": "day3_msg",
+     "variant": "B", "segment": "saas", "signal_type": "job",
+     "reason": "Trigger-based opener: opens on the signal, one question, under 60 words. Made-up company.",
+     "original_body": "Noticed Acme is hiring its first two AEs this quarter. Is pipeline still coming mostly from founder referrals, or are you building outbound alongside the hires?"},
+    {"example_id": "seed-award", "source": "blueprint_seed", "channel": "linkedin", "touch": "day3_msg",
+     "variant": "A", "segment": "professional_services", "signal_type": "award",
+     "reason": "Pain-led variant tied to a growth signal. Made-up company.",
+     "original_body": "Congrats on the growth-list ranking. Fast growth usually means the partners are still the whole sales team. Worth 15 minutes to see how other firms your size took prospecting off their plate?"}
+  ]
+}
